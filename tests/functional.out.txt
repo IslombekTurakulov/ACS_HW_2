@@ -1,0 +1,7 @@
+Filled container:
+Container contains 5 elements.
+0: Functional: name = asytryd, age = 1234, popularity = 14.000000, lazy calculation = TRUE , type = DYNAMIC. Optimal time = 176.285714.
+1: Functional: name = ds, age = 435, popularity = 14.000000, lazy calculation = FALSE, type = STRICT. Optimal time = 217.500000.
+2: Functional: name = gjf, age = 754, popularity = 14.000000, lazy calculation = TRUE , type = DYNAMIC. Optimal time = 251.333333.
+3: Functional: name = dfgfd, age = 754, popularity = 14.000000, lazy calculation = TRUE , type = DYNAMIC. Optimal time = 150.800000.
+4: Functional: name = fd43gdf, age = 3452, popularity = 100.000000, lazy calculation = FALSE, type = STRICT. Optimal time = 493.142857.

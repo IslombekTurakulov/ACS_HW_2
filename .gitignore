@@ -1,0 +1,8 @@
+# OS & IDE
+.idea
+.vscode
+.DS_Store
+
+# Build & debug
+cmake-build-debug
+bin

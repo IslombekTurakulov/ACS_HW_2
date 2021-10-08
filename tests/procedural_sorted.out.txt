@@ -1,0 +1,8 @@
+Sorted container:
+Container contains 6 elements.
+0: Procedural: name = ghfhgf, age = 1875, popularity = 65.000000, has abstract variables = FALSE , Optimal time = 312.500000.
+1: Procedural: name = vbnbvn, age = 2352, popularity = 66.000000, has abstract variables = TRUE , Optimal time = 392.000000.
+2: Procedural: name = hgjgh, age = 1996, popularity = 66.000000, has abstract variables = TRUE , Optimal time = 399.200000.
+3: Procedural: name = sdfsd, age = 1996, popularity = 25.000000, has abstract variables = TRUE , Optimal time = 399.200000.
+4: Procedural: name = reter, age = 2005, popularity = 52.000000, has abstract variables = FALSE , Optimal time = 401.000000.
+5: Procedural: name = vcbvc, age = 2015, popularity = 76.000000, has abstract variables = FALSE , Optimal time = 403.000000.
