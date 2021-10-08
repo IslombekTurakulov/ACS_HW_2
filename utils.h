@@ -23,27 +23,20 @@ public:
     }
 
     static char *randString(int len) {
-        static const char numericalAlphabet[] =
-                "0123456789"
-                "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                "abcdefghijklmnopqrstuvwxyz";
-
+        static const char alphabet[] =
+                "0123456789" "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "abcdefghijklmnopqrstuvwxyz";
         char *result = new char[len + 1];
 
         for (int i = 0; i < len; ++i) {
-            result[i] = numericalAlphabet[rand() % (sizeof(numericalAlphabet) - 1)];
+            result[i] = alphabet[rand() % (sizeof(alphabet) - 1)];
         }
-
-        // Zero terminated string
         result[len] = 0;
-
         return result;
     }
 
     static char *readString(FILE *file) {
         char local[128] = {0};
         fscanf(file, "%s", local);
-
         char *result = (char *) malloc(strlen(local));
         strcpy(result, local);
 
@@ -60,7 +53,6 @@ public:
     static double readDouble(FILE *file) {
         int result;
         fscanf(file, "%d", &result);
-
         return result;
     }
 };
