@@ -27,7 +27,7 @@ void Functional::In(FILE *file) {
 void Functional::InRnd() {
     name = Utils::randString(10);
     age = Utils::randInt(1940, 2021);
-    popularity = (Utils::randInt(1940, 2021) % 100) * 4.2;
+    popularity = (Utils::randInt(0, 100) % 40) * 1.2 ;
     lazy_calculation = Utils::randInt(0, 2) == 0;
     int kind = Utils::randInt(1, 3);
 

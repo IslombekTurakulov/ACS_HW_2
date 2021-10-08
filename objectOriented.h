@@ -13,13 +13,13 @@ class ObjectOriented : public Languages {
 public:
     ~ObjectOriented() override = default;
 
-    // Ввод параметров прямоугольника из файла
+    // Ввод параметров из файла
     void In(FILE *file) override;
 
-    // Случайный ввод параметров прямоугольника
+    // Случайный ввод параметров
     void InRnd() override;
 
-    // Вывод параметров прямоугольника в форматируемый поток
+    // Вывод параметров в форматируемый поток
     void Out(FILE *file) override;
 
     double Quotient() override;

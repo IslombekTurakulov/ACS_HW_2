@@ -29,7 +29,7 @@ void ObjectOriented::In(FILE *file) {
 void ObjectOriented::InRnd() {
     name = Utils::randString(10);
     age = Utils::randInt(1940, 2021);
-    popularity = (Utils::randInt(1940, 2021) % 100) * 4.2;
+    popularity = (Utils::randInt(0, 100) % 40) * 1.2 ;
     has_abstract_variables = Utils::randInt(0, 2) == 0;
     int kind = Utils::randInt(0, 3);
     if (kind == 0) {

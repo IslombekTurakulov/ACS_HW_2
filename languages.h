@@ -14,16 +14,16 @@ class Languages {
 public:
     virtual ~Languages() = default;;
 
-    // Ввод обобщенной фигуры
+    // Ввод обобщенного языка
     static Languages *StaticIn(FILE *file);
 
-    // Ввод обобщенной фигуры
+    // Ввод обобщенного языка
     virtual void In(FILE *file) = 0;
 
-    // Случайный ввод обобщенной фигуры
+    // Случайный ввод обобщенного языка
     static Languages *StaticInRnd();
 
-    // Виртуальный метод ввода случайной фигуры
+    // Виртуальный метод ввода случайного языка
     virtual void InRnd() = 0;
 
     // Вывод обобщенной фигуры

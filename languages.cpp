@@ -22,30 +22,22 @@ Languages *Languages::StaticIn(FILE *file) {
         case 2:
             sp = new Functional;
             break;
-        default:
-            sp = new Procedural;
-            break;
     }
     sp->In(file);
     return sp;
 }
 
 Languages *Languages::StaticInRnd() {
-    int kind = Utils::randInt(1, 4);
-    Languages *language = nullptr;
-    switch (kind) {
-        case 1:
-            language = new Procedural;
-            break;
-        case 2:
-            language = new Functional;
-            break;
-        case 3:
-            language = new ObjectOriented;
-            break;
-        default:
-            break;
+    Languages *language;
+    int kind = Utils::randInt(1, 3);
+    if (kind == 1) {
+        language = new Procedural;
+    } else if (kind == 2) {
+        language = new ObjectOriented;
+    } else {
+        language = new Functional;
     }
+
     language->InRnd();
     return language;
 }

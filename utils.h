@@ -13,10 +13,7 @@
 
 class Utils {
 public:
-    Utils() {
-        // системные часы в качестве инициализатора
-        srand(static_cast<unsigned int>(time(nullptr)));
-    }
+    Utils() = default;
 
     static int randInt(int first, int last) {
         return rand() % (first - last + 1) + last;
