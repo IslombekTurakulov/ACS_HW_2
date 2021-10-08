@@ -30,17 +30,22 @@ void third_error_message() {
 }
 
 //------------------------------------------------------------------------------
-int main() {
-    char *argv[] = {"command", "-f",
-                    R"(C:\Users\Islombek\CLionProjects\ACS-HW\ACS-HW-2\tests\procedural.txt)", \
-                    R"(C:\Users\Islombek\CLionProjects\ACS-HW\ACS-HW-2\tests\procedural.out.txt)",
-                    R"(C:\Users\Islombek\CLionProjects\ACS-HW\ACS-HW-2\tests\procedural_sorted.out.txt)"};
-    printf("Start\n");
-    Container c;
+int main(int argc, char *argv[]) {
+    if (argc != 5) {
+        first_error_message();
+        return 1;
+    }
 
+    printf("Start\n");
+    Container container;
     if (!strcmp(argv[1], "-f")) {
         FILE *input = fopen(argv[2], "r");
-        c.In(input);
+        // Проверка на существование файла.
+        if (!input) {
+            printf("File doesn't exist!");
+            return 1;
+        }
+        container.In(input);
         fclose(input);
     } else if (!strcmp(argv[1], "-n")) {
         auto size = atoi(argv[2]);
@@ -51,7 +56,7 @@ int main() {
         // системные часы в качестве инициализатора
         srand(static_cast<unsigned int>(time(0)));
         // Заполнение контейнера генератором случайных чисел
-        c.InRnd(size);
+        container.InRnd(size);
     } else {
         third_error_message();
         return 2;
@@ -60,13 +65,13 @@ int main() {
     // Вывод содержимого контейнера в файл
     FILE *first_output = fopen(argv[3], "w");
     fprintf(first_output, "Filled container:\n");
-    c.Out(first_output);
+    container.Out(first_output);
 
     // The 2nd part of task
     FILE *second_output = fopen(argv[4], "w");
     fprintf(second_output, "Sorted container:\n");
-    c.StraightSelectionSort();
-    c.Out(second_output);
+    container.StraightSelectionSort();
+    container.Out(second_output);
 
     printf("Stop\n");
     fclose(first_output);
