@@ -6,7 +6,6 @@
 #include <cstdlib> // для функций rand() и srand()
 #include <ctime>   // для функции time()
 #include <cstring>
-
 #include "container.h"
 
 void first_error_message() {
