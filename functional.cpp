@@ -13,13 +13,13 @@ void Functional::In(FILE *file) {
 
     switch (kind) {
         case 1:
-            type = typing::DYNAMIC;
+            type = DYNAMIC;
             break;
         case 2:
-            type = typing::STRICT;
+            type = STRICT;
             break;
         default:
-            type = typing::ERROR;
+            type = ERROR;
             break;
     }
 }
@@ -32,9 +32,9 @@ void Functional::InRnd() {
     int kind = Utils::randInt(1, 3);
 
     if (kind == 1) {
-        type = typing::DYNAMIC;
+        type = DYNAMIC;
     } else if (kind == 2) {
-        type = typing::STRICT;
+        type = STRICT;
     }
 }
 
@@ -48,9 +48,9 @@ void Functional::Out(FILE *file) {
             lazy_calculation ? "TRUE " : "FALSE"
     );
 
-    if (type == typing::DYNAMIC) {
+    if (type == DYNAMIC) {
         fprintf(file, "type = DYNAMIC. ");
-    } else if (type == typing::STRICT) {
+    } else if (type == STRICT) {
         fprintf(file, "type = STRICT. ");
     }
 

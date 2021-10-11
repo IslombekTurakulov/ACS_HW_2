@@ -12,16 +12,16 @@ void ObjectOriented::In(FILE *file) {
     int kind = Utils::readInt(file);
     switch (kind) {
         case 0:
-            type = legacy::SINGLE;
+            type = SINGLE;
             break;
         case 1:
-            type = legacy::INTERFACE;
+            type = INTERFACE;
             break;
         case 2:
-            type = legacy::MULTIPLE;
+            type = MULTIPLE;
             break;
         default:
-            type = legacy::ERROR;
+            type = ERROR;
             break;
     }
 }
@@ -33,11 +33,11 @@ void ObjectOriented::InRnd() {
     has_abstract_variables = Utils::randInt(0, 2) == 0;
     int kind = Utils::randInt(0, 3);
     if (kind == 0) {
-        type = legacy::SINGLE;
+        type = SINGLE;
     } else if (kind == 1) {
-        type = legacy::INTERFACE;
+        type = INTERFACE;
     } else if (kind == 2) {
-        type = legacy::MULTIPLE;
+        type = MULTIPLE;
     }
 }
 
@@ -51,11 +51,11 @@ void ObjectOriented::Out(FILE *file) {
             has_abstract_variables ? "TRUE" : "FALSE"
     );
 
-    if (type == legacy::SINGLE) {
+    if (type == SINGLE) {
         fprintf(file, "legacy = SINGLE. ");
-    } else if (type == legacy::INTERFACE) {
+    } else if (type == INTERFACE) {
         fprintf(file, "legacy = INTERFACE. ");
-    } else if (type == legacy::MULTIPLE) {
+    } else if (type == MULTIPLE) {
         fprintf(file, "legacy = MULTIPLE. ");
     }
 

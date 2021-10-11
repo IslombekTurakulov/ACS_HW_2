@@ -6,13 +6,14 @@
 #define __languages__
 
 #include <cstdio>
+#include "languages.h"
 #include "utils.h"
 
 //------------------------------------------------------------------------------
-// структура, обобщающая все имеющиеся фигуры
+// структура, обобщающая все имеющиеся языки
 class Languages {
 public:
-    virtual ~Languages() = default;;
+    virtual ~Languages() = default;
 
     // Ввод обобщенного языка
     static Languages *StaticIn(FILE *file);

@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------------
-// container_Constr.cpp - содержит функции обработки контейнера
+// container.cpp - содержит функции обработки контейнера
 //------------------------------------------------------------------------------
 
 #include <cstdio>
@@ -49,8 +49,9 @@ void Container::InRnd(int size) {
 // Вывод содержимого контейнера в указанный поток
 void Container::Out(FILE *file) {
     fprintf(file, "Container contains %d elements.\n", len);
+
     for (int i = 0; i < len; i++) {
-        fprintf(file, "%d: ", i);
+        fprintf(file, "%d: ", i + 1);
         cont[i]->Out(file);
     }
 }

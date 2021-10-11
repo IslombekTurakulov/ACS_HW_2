@@ -1,7 +1,6 @@
 //
 // Created by Islombek on 08.10.2021.
 //
-
 #include "languages.h"
 #include "functional.h"
 #include "objectOriented.h"
@@ -10,34 +9,41 @@
 //------------------------------------------------------------------------------
 // Ввод параметров языка из файла
 Languages *Languages::StaticIn(FILE *file) {
-    Languages *sp;
+    Languages *sp = NULL;
     int kind = Utils::readInt(file);
     switch (kind) {
         case 0:
-            sp = new Procedural;
+            sp = new Functional;
+            sp->In(file);
             break;
         case 1:
             sp = new ObjectOriented;
+            sp->In(file);
             break;
-        case 2:
-            sp = new Functional;
+        default:
+            sp = new Procedural;
+            sp->In(file);
             break;
     }
-    sp->In(file);
+
     return sp;
 }
 
 Languages *Languages::StaticInRnd() {
-    Languages *language;
-    int kind = Utils::randInt(1, 3);
-    if (kind == 1) {
-        language = new Procedural;
-    } else if (kind == 2) {
-        language = new ObjectOriented;
+    Languages *language = NULL;
+    int kind = Utils::randInt(1,3);
+    printf("%d", kind);
+    if (kind != 1) {
+        if (kind == 2) {
+            language = new ObjectOriented;
+            language->InRnd();
+        } else {
+            language = new Functional;
+            language->InRnd();
+        }
     } else {
-        language = new Functional;
+        language = new Procedural;
+        language->InRnd();
     }
-
-    language->InRnd();
     return language;
 }

@@ -30,10 +30,10 @@ private:
     int age;
     double popularity;
     bool lazy_calculation;
-    enum typing {
+    enum {
         DYNAMIC, STRICT, ERROR
     };
-    typing type;
+    int type;
 };
 
 #endif //__functional__

@@ -13,10 +13,11 @@
 
 class Utils {
 public:
-    Utils() = default;
+
+    // Генерация случайного числа в заданном диапазоне
 
     static int randInt(int first, int last) {
-        return rand() % (first - last + 1) + last;
+        return rand() % (last - first + 1) + first;
     }
 
     static char *randString(int len) {
@@ -41,15 +42,14 @@ public:
     }
 
     static int readInt(FILE *file) {
-        int result;
+        int result = 0;
         fscanf(file, "%d", &result);
-
         return result;
     }
 
     static double readDouble(FILE *file) {
-        int result;
-        fscanf(file, "%d", &result);
+        double result;
+        fscanf(file, "%lf", &result);
         return result;
     }
 };

@@ -29,12 +29,10 @@ void third_error_message() {
 }
 
 //------------------------------------------------------------------------------
-int main(int argc, char *argv[]) {
-    if (argc != 5) {
-        first_error_message();
-        return 1;
-    }
-
+int main() {
+   char *argv[5] = {"command", "-n", "20",
+                    R"(C:\Users\Islombek\CLionProjects\ACS-HW\ACS-HW-2\tests\random.out.txt)",
+                    R"(C:\Users\Islombek\CLionProjects\ACS-HW\ACS-HW-2\tests\random_sorted.out.txt)"};
     printf("Start\n");
     Container container;
     if (!strcmp(argv[1], "-f")) {

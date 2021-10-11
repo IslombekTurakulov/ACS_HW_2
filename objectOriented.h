@@ -29,10 +29,10 @@ private:
     int age;
     double popularity;
     bool has_abstract_variables;
-    enum legacy {
+    enum {
         SINGLE, MULTIPLE, INTERFACE, ERROR
     };
-    legacy type;
+    int type;
 };
 
 #endif //__objectOriented__
