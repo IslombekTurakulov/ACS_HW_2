@@ -15,7 +15,6 @@ class Utils {
 public:
 
     // Генерация случайного числа в заданном диапазоне
-
     static int randInt(int first, int last) {
         return rand() % (last - first + 1) + first;
     }

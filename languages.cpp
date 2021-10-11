@@ -32,7 +32,6 @@ Languages *Languages::StaticIn(FILE *file) {
 Languages *Languages::StaticInRnd() {
     Languages *language = NULL;
     int kind = Utils::randInt(1,3);
-    printf("%d", kind);
     if (kind != 1) {
         if (kind == 2) {
             language = new ObjectOriented;
