@@ -26,7 +26,6 @@ void Container::Clear() {
 
 //------------------------------------------------------------------------------
 // Ввод содержимого контейнера из указанного потока
-// я решил игнорировать невалидные объекты
 void Container::In(FILE *file) {
     while (!feof(file)) {
         if ((cont[len] = Languages::StaticIn(file)) != nullptr) {

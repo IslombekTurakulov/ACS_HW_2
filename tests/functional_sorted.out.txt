@@ -1,7 +1,7 @@
 Sorted container:
 Container contains 5 elements.
-0: Functional: name = dfgfd, age = 754, popularity = 14.000000, lazy calculation = TRUE , type = DYNAMIC. Optimal time = 150.800000.
-1: Functional: name = asytryd, age = 1234, popularity = 14.000000, lazy calculation = TRUE , type = DYNAMIC. Optimal time = 176.285714.
-2: Functional: name = ds, age = 435, popularity = 14.000000, lazy calculation = FALSE, type = STRICT. Optimal time = 217.500000.
-3: Functional: name = gjf, age = 754, popularity = 14.000000, lazy calculation = TRUE , type = DYNAMIC. Optimal time = 251.333333.
-4: Functional: name = fd43gdf, age = 3452, popularity = 100.000000, lazy calculation = FALSE, type = STRICT. Optimal time = 493.142857.
+0: Functional: name_ = dfgfd, age_ = 754, popularity_ = 14.000000, lazy calculation = TRUE , type_ = DYNAMIC. Optimal time = 150.800000.
+1: Functional: name_ = asytryd, age_ = 1234, popularity_ = 14.000000, lazy calculation = TRUE , type_ = DYNAMIC. Optimal time = 176.285714.
+2: Functional: name_ = ds, age_ = 435, popularity_ = 14.000000, lazy calculation = FALSE, type_ = STRICT. Optimal time = 217.500000.
+3: Functional: name_ = gjf, age_ = 754, popularity_ = 14.000000, lazy calculation = TRUE , type_ = DYNAMIC. Optimal time = 251.333333.
+4: Functional: name_ = fd43gdf, age_ = 3452, popularity_ = 100.000000, lazy calculation = FALSE, type_ = STRICT. Optimal time = 493.142857.

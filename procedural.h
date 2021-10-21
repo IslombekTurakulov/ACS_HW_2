@@ -25,10 +25,10 @@ public:
     double Quotient() override;
 
 private:
-    const char *name;
-    int age;
-    double popularity;
-    bool has_abstract_variables;
+    const char *name_;
+    int age_;
+    double popularity_;
+    bool has_abstract_variables_;
 };
 
 #endif //__procedural__

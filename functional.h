@@ -26,14 +26,14 @@ public:
     double Quotient() override;
 
 private:
-    const char *name;
-    int age;
-    double popularity;
-    bool lazy_calculation;
+    const char *name_;
+    int age_;
+    double popularity_;
+    bool lazy_calculation_;
     enum {
         DYNAMIC, STRICT, ERROR
     };
-    int type;
+    int type_;
 };
 
 #endif //__functional__

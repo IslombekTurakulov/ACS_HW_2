@@ -34,7 +34,6 @@ int main(int argc, char *argv[]) {
         first_error_message();
         return 1;
     }
-
     printf("Start\n");
     Container container;
     if (!strcmp(argv[1], "-f")) {

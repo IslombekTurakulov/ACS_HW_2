@@ -5,60 +5,60 @@
 #include "functional.h"
 
 void Functional::In(FILE *file) {
-    name = Utils::readString(file);
-    age = Utils::readInt(file);
-    popularity = Utils::readDouble(file);
-    lazy_calculation = Utils::readInt(file) == 0;
+    name_ = Utils::readString(file);
+    age_ = Utils::readInt(file);
+    popularity_ = Utils::readDouble(file);
+    lazy_calculation_ = Utils::readInt(file) == 0;
     int kind = Utils::readInt(file);
 
     switch (kind) {
         case 1:
-            type = DYNAMIC;
+            type_ = DYNAMIC;
             break;
         case 2:
-            type = STRICT;
+            type_ = STRICT;
             break;
         default:
-            type = ERROR;
+            type_ = ERROR;
             break;
     }
 }
 
 void Functional::InRnd() {
-    name = Utils::randString(10);
-    age = Utils::randInt(1940, 2021);
-    popularity = (Utils::randInt(0, 100) % 40) * 1.2 ;
-    lazy_calculation = Utils::randInt(0, 2) == 0;
+    name_ = Utils::randString(10);
+    age_ = Utils::randInt(1940, 2021);
+    popularity_ = (Utils::randInt(0, 100) % 40) * 1.2 ;
+    lazy_calculation_ = Utils::randInt(0, 2) == 0;
     int kind = Utils::randInt(1, 3);
 
     if (kind == 1) {
-        type = DYNAMIC;
+        type_ = DYNAMIC;
     } else if (kind == 2) {
-        type = STRICT;
+        type_ = STRICT;
     }
 }
 
 void Functional::Out(FILE *file) {
     fprintf(
             file,
-            "Functional: name = %s, age = %i, popularity = %f, lazy calculation = %s, ",
-            name,
-            age,
-            popularity,
-            lazy_calculation ? "TRUE " : "FALSE"
+            "Functional: name_ = %s, age_ = %i, popularity_ = %f, lazy calculation = %s, ",
+            name_,
+            age_,
+            popularity_,
+            lazy_calculation_ ? "TRUE " : "FALSE"
     );
 
-    if (type == DYNAMIC) {
-        fprintf(file, "type = DYNAMIC. ");
-    } else if (type == STRICT) {
-        fprintf(file, "type = STRICT. ");
+    if (type_ == DYNAMIC) {
+        fprintf(file, "type_ = DYNAMIC. ");
+    } else if (type_ == STRICT) {
+        fprintf(file, "type_ = STRICT. ");
     }
 
     fprintf(file, "Optimal time = %lf.\n", Quotient());
 }
 
 //------------------------------------------------------------------------------
-// Вычисление year / name.len
+// Вычисление year / name_.len
 double Functional::Quotient() {
-    return static_cast<double>(age) / static_cast<double>(strlen(name));
+    return static_cast<double>(age_) / static_cast<double>(strlen(name_));
 }
