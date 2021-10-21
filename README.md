@@ -101,28 +101,7 @@ Linux DESKTOP-250N7G3 5.10.16.3-microsoft-standard-WSL2 #1 SMP Fri Apr 2 22:23:4
 int    | 4 
 char   | 1 
 double | 8 
-bool   | 1 
-
-
-### Память процесса:
-__main(argc, argv)__:
-Имя переменной | Смещение в стэке | Размер | Куда указывает (для переменных типа указатель)
-:--- | --- | --- | ---
-int argc | 0 | 4
-char** argv | 4 | 8 | Указаель указывает на память, где расположены аргументы командной строки. На машине, на которой проводится тестирование, указатель указывает на память аллоцированную на стеке.
-std::ifstream input_file | 8 | 520
-std::ofstream output_file | 528 | 512
-Container container | 1030 | 80008 | Каждый из инициализированных указателей массива `container.films` указывает на данные в HEAP (инициализируеются указатели после вызовов `Deserialize` или `Generate`). Сам указатель `container.films` указывает на массив аллоцированный на стеке.
-Initialize |  | 8
-DeserializationError error_code | 81038 | 4
-Deserialize | | 8
-FatalError | | 8
-PrintUsage | | 8
-size_t number | 81038 | 8
-InitRandomizerSetup | | 8
-Generate | | 8
-SelectionSort | | 8
-Serialize | | 8
+bool   | 1
 
 Глобальная память:
 ```
