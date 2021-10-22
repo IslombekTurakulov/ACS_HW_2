@@ -183,11 +183,11 @@ bool   | 1
 
 | Куча                                                        |
 |-------------------------------------------------------------|
-| Container *cont(80000)                                      |
+| Container *cont -> 80000 байт                                      |
 | Объекты ПК в зависимости от количества (от 0 до 10000)      |
 | ПК_1 : Functional or ObjectOriented or Procedural       |
 | ПК_2 : Functional or ObjectOriented or Procedural       |
-|      |
+| и т.д до i диапазона     |
 | ПК_(i - 1) : Functional or ObjectOriented or Procedural |
 | ПК_i : Functional or ObjectOriented or Procedural       |
 
