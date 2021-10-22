@@ -121,6 +121,7 @@ bool   | 1
 | Поля                                  | Static:<br>Отсутствует<br><br>Local: <br>Отсутствует                                                                                                                                                |
 | Методы                                | Static: Languages *StaticIn(FILE *file); <br>Languages *StaticInRnd();<br><br><br>Local: <br>~Languages();<br>void In(FILE *file);<br>void InRnd();<br>void Out(FILE *file);<br>double Quotinent(); |
 | Enum                                  |                                                                                             Отсутствует                                                                                             |
+
 | Таблица классов<br>Производные классы |                                                                              Functional : Languages [26 байт + 0 байт]                                                                              |
 |---------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | Поля                                  | Static: <br>Отсутствует<br><br>Local: <br>const char *name_[5 байт];<br>int age_ [4 байт];<br>double popularity_ [8 байт];<br>bool lazy_calculation_ [1 байт];<br>int type_ [4 байт];               |
@@ -134,5 +135,3 @@ bool   | 1
 | Поля                                  | Static: <br>Отсутствует<br><br>Local: <br>const char *name_[5 байт];<br>int age_ [4 байт];<br>double popularity_ [8 байт];<br>bool has_abstract_variables_ [1 байт];                                |
 | Методы                                | Static:<br><br><br><br>Local:<br>~ObjectOriented(); <br>void In(FILE *file); <br>void InRnd(); <br>void Out(FILE *file);<br>double Quotinent();                                                     |
 | Enum                                  |                                                                                             Отсутствует                                                                                             |
-|                                       |                                                                                                                                                                                                     |
-|                                       |                                                                                                                                                                                                     |
