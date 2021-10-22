@@ -187,7 +187,7 @@ bool   | 1
 | Объекты ПК в зависимости от количества (от 0 до 10000)      |
 | ПК_1 : Functional or ObjectOriented or Procedural       |
 | ПК_2 : Functional or ObjectOriented or Procedural       |
-| .......................................................     |
+|      |
 | ПК_(i - 1) : Functional or ObjectOriented or Procedural |
 | ПК_i : Functional or ObjectOriented or Procedural       |
 
