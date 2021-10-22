@@ -33,7 +33,6 @@ public:
     void StraightSelectionSort();
 
 private:
-    void Clear();    // Очистка контейнера от данных
     int len; // текущая длина
     Languages *cont[10000]{};
 };
