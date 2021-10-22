@@ -174,6 +174,21 @@ bool   | 1
 |:-----------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |       Статические       |                                                                                      -                                                                                     | char *name_ [4 байт]<br>int age_ [4 байт]<br><br>int, file : Languages *StaticIn(FILE *file) -> 12 байт<br>self : Languages *StaticInRnd() -> 16 байт                                             |                                                                                                                              -                                                                                                                              |
 |        Локальные        | file  : void In(FILE *file) -> 8 байт<br>size  : void InRnd(int size) -> 4 байта<br>file : void Out(FILE *file) -> 8 байт<br>self : void StraightSelectionSort() -> 8 байт |                                                                                                 -                                                                                                 |                                                                                                                              -                                                                                                                              |
-|       Виртуальные       |                                                                                      -                                                                                     | self : ~Languages() -> 8 байт <br>file : void In(FILE *file) -> 8 байт <br>self : void InRnd() -> 8 байт<br>file : void Out(FILE *file) -> 8 байт<br>double, self : double Quotinent() -> 16 байт | self : ~Languages() -> 8 байт <br>file : void In(FILE *file) -> 24 или 25 байт <br>self : void InRnd() -> 24 или 25 байт<br>file : void Out(FILE *file) -> 24 или 25 байт + Quotinent() размер<br>double, name_, age_ ,self : double Quotinent() -> 24 байт |
+|       Виртуальные       |                                                                                      -                                                                                     | self : ~Languages() -> 8 байт <br>file : void In(FILE *file) -> 8 байт <br>self : void InRnd() -> 8 байт<br>file : void Out(FILE *file) -> 8 байт<br>double, self : double Quotient() -> 16 байт | self : ~Languages() -> 8 байт <br>file : void In(FILE *file) -> 24 или 25 байт <br>self : void InRnd() -> 24 или 25 байт<br>file : void Out(FILE *file) -> 24 или 25 байт + Quotient() размер<br>double, name_, age_ ,self : double Quotient() -> 24 байт |
 |                         |                                                                                                                                                                            |                                                                                                                                                                                                   |                                                                                                                                                                                                                                                             |
+
+## Куча
+
+---------
+
+| Куча                                                        |
+|-------------------------------------------------------------|
+| Container *cont(80000)                                      |
+| Объекты ПК в зависимости от количества (от 0 до 10000)      |
+| ПК_1 : Functional or ObjectOriented or Procedural       |
+| ПК_2 : Functional or ObjectOriented or Procedural       |
+| .......................................................     |
+| ПК_(i - 1) : Functional or ObjectOriented or Procedural |
+| ПК_i : Functional or ObjectOriented or Procedural       |
+
 
