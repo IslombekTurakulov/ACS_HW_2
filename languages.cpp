@@ -8,41 +8,41 @@
 
 //------------------------------------------------------------------------------
 // Ввод параметров языка из файла
-Languages *Languages::StaticIn(FILE *file) {
-    Languages *sp = NULL;
+languages *languages::StaticIn(FILE *file) {
+    languages *sp = NULL;
     int kind = Utils::readInt(file);
     switch (kind) {
         case 0:
-            sp = new Functional;
-            sp->In(file);
+            sp = new functional;
+            sp->in(file);
             break;
         case 1:
-            sp = new ObjectOriented;
-            sp->In(file);
+            sp = new objectOriented;
+            sp->in(file);
             break;
         default:
-            sp = new Procedural;
-            sp->In(file);
+            sp = new procedural;
+            sp->in(file);
             break;
     }
 
     return sp;
 }
 
-Languages *Languages::StaticInRnd() {
-    Languages *language = NULL;
+languages *languages::StaticInRnd() {
+    languages *language = NULL;
     int kind = Utils::randInt(1,3);
     if (kind != 1) {
         if (kind == 2) {
-            language = new ObjectOriented;
-            language->InRnd();
+            language = new objectOriented;
+            language->inRnd();
         } else {
-            language = new Functional;
-            language->InRnd();
+            language = new functional;
+            language->inRnd();
         }
     } else {
-        language = new Procedural;
-        language->InRnd();
+        language = new procedural;
+        language->inRnd();
     }
     return language;
 }

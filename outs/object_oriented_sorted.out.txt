@@ -1,0 +1,8 @@
+Sorted container:
+Container contains 6 elements.
+0: Object Oriented: name = dfgdfg, age = 1925, popularity = 35.000000, has abstract variables = TRUE, legacy = INTERFACE. quotient = 320.833333.
+1: Object Oriented: name = qwerty, age = 2005, popularity = 12.000000, has abstract variables = FALSE, legacy = INTERFACE. quotient = 334.166667.
+2: Object Oriented: name = werwer, age = 2006, popularity = 54.000000, has abstract variables = FALSE, legacy = INTERFACE. quotient = 334.333333.
+3: Object Oriented: name = qweqw, age = 1999, popularity = 65.000000, has abstract variables = FALSE, legacy = INTERFACE. quotient = 399.800000.
+4: Object Oriented: name = cxvxc, age = 2019, popularity = 96.000000, has abstract variables = TRUE, legacy = INTERFACE. quotient = 403.800000.
+5: Object Oriented: name = zxc, age = 2014, popularity = 24.000000, has abstract variables = FALSE, legacy = INTERFACE. quotient = 671.333333.

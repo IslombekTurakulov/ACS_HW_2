@@ -1,8 +1,0 @@
-Filled container:
-Container contains 6 elements.
-0: Object Oriented: name_ = dfgdfg, age_ = 1925, popularity_ = 35.000000, has abstract variables = TRUE, legacy = INTERFACE. Optimal time = 320.833333.
-1: Object Oriented: name_ = qweqw, age_ = 1999, popularity_ = 65.000000, has abstract variables = FALSE, legacy = INTERFACE. Optimal time = 399.800000.
-2: Object Oriented: name_ = werwer, age_ = 2006, popularity_ = 54.000000, has abstract variables = FALSE, legacy = INTERFACE. Optimal time = 334.333333.
-3: Object Oriented: name_ = cxvxc, age_ = 2019, popularity_ = 96.000000, has abstract variables = TRUE, legacy = INTERFACE. Optimal time = 403.800000.
-4: Object Oriented: name_ = zxc, age_ = 2014, popularity_ = 24.000000, has abstract variables = FALSE, legacy = INTERFACE. Optimal time = 671.333333.
-5: Object Oriented: name_ = qwerty, age_ = 2005, popularity_ = 12.000000, has abstract variables = FALSE, legacy = INTERFACE. Optimal time = 334.166667.

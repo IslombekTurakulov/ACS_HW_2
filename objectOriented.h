@@ -9,30 +9,30 @@
 #include "languages.h"
 
 // Процедурный язык
-class ObjectOriented : public Languages {
+class objectOriented : public languages {
 public:
-    ~ObjectOriented() override = default;
+    ~objectOriented() override = default;
 
     // Ввод параметров из файла
-    void In(FILE *file) override;
+    void in(FILE *file) override;
 
     // Случайный ввод параметров
-    void InRnd() override;
+    void inRnd() override;
 
     // Вывод параметров в форматируемый поток
-    void Out(FILE *file) override;
+    void out(FILE *file) override;
 
-    double Quotient() override;
+    double quotient() override;
 
 private:
-    const char *name_;
-    int age_;
-    double popularity_;
-    bool has_abstract_variables_;
+    const char *name;
+    int age;
+    double popularity;
+    bool has_abstract_variables;
     enum {
         SINGLE, MULTIPLE, INTERFACE, ERROR
     };
-    int type_;
+    int type;
 };
 
 #endif //__objectOriented__

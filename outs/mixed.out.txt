@@ -1,0 +1,14 @@
+Filled container:
+Container contains 12 elements.
+0: functional: name = Funclang1, age = 1924, popularity = 34.000000, lazy calculation = TRUE , type = DYNAMIC. quotient = 213.777778.
+1: functional: name = Funclang2, age = 1942, popularity = 324.000000, lazy calculation = FALSE, type = DYNAMIC. quotient = 215.777778.
+2: Object Oriented: name = object_oriented1, age = 1980, popularity = 32.000000, has abstract variables = FALSE, legacy = INTERFACE. quotient = 123.750000.
+3: Object Oriented: name = object_oriented2, age = 1991, popularity = 23.000000, has abstract variables = FALSE, legacy = INTERFACE. quotient = 124.437500.
+4: Object Oriented: name = object_oriented3, age = 1990, popularity = 242.000000, has abstract variables = TRUE, legacy = SINGLE. quotient = 124.375000.
+5: Object Oriented: name = ProcLang3, age = 1951, popularity = 24.000000, has abstract variables = FALSE, legacy = SINGLE. quotient = 216.777778.
+6: Object Oriented: name = ProcLang4, age = 1952, popularity = 41.000000, has abstract variables = TRUE, legacy = MULTIPLE. quotient = 216.888889.
+7: Object Oriented: name = FuncLang3, age = 1954, popularity = 241.000000, has abstract variables = TRUE, legacy = INTERFACE. quotient = 217.111111.
+8: functional: name = FuncLang4, age = 1952, popularity = 234.000000, lazy calculation = FALSE, type = DYNAMIC. quotient = 216.888889.
+9: Object Oriented: name = object_oriented4, age = 1980, popularity = 34.000000, has abstract variables = FALSE, legacy = INTERFACE. quotient = 123.750000.
+10: Object Oriented: name = object_oriented5, age = 1991, popularity = 32.000000, has abstract variables = FALSE, legacy = INTERFACE. quotient = 124.437500.
+11: Object Oriented: name = object_oriented6, age = 1990, popularity = 232.000000, has abstract variables = TRUE, legacy = SINGLE. quotient = 124.375000.

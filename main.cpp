@@ -70,7 +70,6 @@ int main(int argc, char *argv[]) {
     fprintf(second_output, "Sorted container:\n");
     container.StraightSelectionSort();
     container.Out(second_output);
-
     printf("Stop\n");
     fclose(first_output);
     fclose(second_output);

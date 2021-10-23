@@ -1,0 +1,8 @@
+Filled container:
+Container contains 6 elements.
+0: procedural: name = sdfsd, age = 1996, popularity = 25.000000, has abstract variables = TRUE , quotient = 399.200000.
+1: procedural: name = reter, age = 2005, popularity = 52.000000, has abstract variables = FALSE , quotient = 401.000000.
+2: procedural: name = vbnbvn, age = 2352, popularity = 66.000000, has abstract variables = TRUE , quotient = 392.000000.
+3: procedural: name = hgjgh, age = 1996, popularity = 66.000000, has abstract variables = TRUE , quotient = 399.200000.
+4: procedural: name = ghfhgf, age = 1875, popularity = 65.000000, has abstract variables = FALSE , quotient = 312.500000.
+5: procedural: name = vcbvc, age = 2015, popularity = 76.000000, has abstract variables = FALSE , quotient = 403.000000.

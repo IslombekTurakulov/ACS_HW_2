@@ -10,30 +10,30 @@
 #include "languages.h"
 
 // Функциональный
-class Functional : public Languages {
+class functional : public languages {
 public:
-    ~Functional() override = default;
+    ~functional() override = default;
 
     // Ввод параметров из файла
-    void In(FILE *file) override;
+    void in(FILE *file) override;
 
     // Случайный ввод параметров
-    void InRnd() override;
+    void inRnd() override;
 
     // Вывод параметров в форматируемый поток
-    void Out(FILE *file) override;
+    void out(FILE *file) override;
 
-    double Quotient() override;
+    double quotient() override;
 
 private:
-    const char *name_;
-    int age_;
-    double popularity_;
-    bool lazy_calculation_;
+    const char *name;
+    int age;
+    double popularity;
+    bool lazy_calculation;
     enum {
         DYNAMIC, STRICT, ERROR
     };
-    int type_;
+    int type;
 };
 
 #endif //__functional__

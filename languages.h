@@ -11,27 +11,27 @@
 
 //------------------------------------------------------------------------------
 // структура, обобщающая все имеющиеся языки
-class Languages {
+class languages {
 public:
-    virtual ~Languages() = default;
+    virtual ~languages() = default;
 
     // Ввод обобщенного языка
-    static Languages *StaticIn(FILE *file);
+    static languages *StaticIn(FILE *file);
 
     // Ввод обобщенного языка
-    virtual void In(FILE *file) = 0;
+    virtual void in(FILE *file) = 0;
 
     // Случайный ввод обобщенного языка
-    static Languages *StaticInRnd();
+    static languages *StaticInRnd();
 
     // Виртуальный метод ввода случайного языка
-    virtual void InRnd() = 0;
+    virtual void inRnd() = 0;
 
     // Вывод обобщенной фигуры
-    virtual void Out(FILE *file) = 0;
+    virtual void out(FILE *file) = 0;
 
     // Вычисление периметра обобщенной фигуры
-    virtual double Quotient() = 0;
+    virtual double quotient() = 0;
 };
 
 #endif //__languages__

@@ -22,7 +22,7 @@ Container::~Container() {
 // Ввод содержимого контейнера из указанного потока
 void Container::In(FILE *file) {
     while (!feof(file)) {
-        if ((cont[len] = Languages::StaticIn(file)) != nullptr) {
+        if ((cont[len] = languages::StaticIn(file)) != nullptr) {
             len++;
         }
     }
@@ -32,7 +32,7 @@ void Container::In(FILE *file) {
 // Случайный ввод содержимого контейнера
 void Container::InRnd(int size) {
     while (len < size) {
-        if ((cont[len] = Languages::StaticInRnd()) != nullptr) {
+        if ((cont[len] = languages::StaticInRnd()) != nullptr) {
             len++;
         }
     }
@@ -45,7 +45,7 @@ void Container::Out(FILE *file) {
 
     for (int i = 0; i < len; i++) {
         fprintf(file, "%d: ", i + 1);
-        cont[i]->Out(file);
+        cont[i]->out(file);
     }
 }
 
@@ -56,12 +56,12 @@ void Container::StraightSelectionSort() {
     for (int i = 0; i < len; ++i) {
         int min_index = i;
         for (int j = i; j < len; ++j) {
-            if (cont[j]->Quotient() < cont[min_index]->Quotient()) {
+            if (cont[j]->quotient() < cont[min_index]->quotient()) {
                 min_index = j;
             }
         }
         // мы нашли индекс минимального не отсортированного элемента
-        Languages *tmp = cont[i];
+        languages *tmp = cont[i];
         cont[i] = cont[min_index];
         cont[min_index] = tmp;
     }

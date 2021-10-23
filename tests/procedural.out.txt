@@ -1,8 +1,0 @@
-Filled container:
-Container contains 6 elements.
-0: Procedural: name_ = sdfsd, age_ = 1996, popularity_ = 25.000000, has abstract variables = TRUE , Optimal time = 399.200000.
-1: Procedural: name_ = reter, age_ = 2005, popularity_ = 52.000000, has abstract variables = FALSE , Optimal time = 401.000000.
-2: Procedural: name_ = vbnbvn, age_ = 2352, popularity_ = 66.000000, has abstract variables = TRUE , Optimal time = 392.000000.
-3: Procedural: name_ = hgjgh, age_ = 1996, popularity_ = 66.000000, has abstract variables = TRUE , Optimal time = 399.200000.
-4: Procedural: name_ = ghfhgf, age_ = 1875, popularity_ = 65.000000, has abstract variables = FALSE , Optimal time = 312.500000.
-5: Procedural: name_ = vcbvc, age_ = 2015, popularity_ = 76.000000, has abstract variables = FALSE , Optimal time = 403.000000.

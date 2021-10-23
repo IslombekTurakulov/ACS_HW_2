@@ -34,7 +34,7 @@ public:
 
 private:
     int len; // текущая длина
-    Languages *cont[10000]{};
+    languages *cont[10000]{};
 };
 
 #endif

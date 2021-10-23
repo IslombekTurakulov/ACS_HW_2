@@ -1,0 +1,22 @@
+Sorted container:
+Container contains 20 elements.
+1: Object Oriented: name = Yb3XuC3US7, age = 1941, popularity = 45.600000, has abstract variables = TRUE, legacy = MULTIPLE. quotient = 194.100000.
+2: procedural: name = 042nnQ7qcD, age = 1942, popularity = 21.600000, has abstract variables = FALSE , quotient = 194.200000.
+3: procedural: name = CfftwKv4yH, age = 1947, popularity = 2.400000, has abstract variables = FALSE , quotient = 194.700000.
+4: procedural: name = iZ23jOswpn, age = 1956, popularity = 15.600000, has abstract variables = FALSE , quotient = 195.600000.
+5: procedural: name = GJ5uOXPGlq, age = 1957, popularity = 28.800000, has abstract variables = FALSE , quotient = 195.700000.
+6: procedural: name = zZOXRHw8vi, age = 1965, popularity = 31.200000, has abstract variables = FALSE , quotient = 196.500000.
+7: functional: name = 9P4n5LQeYy, age = 1966, popularity = 37.200000, lazy calculation = FALSE, type = DYNAMIC. quotient = 196.600000.
+8: procedural: name = pwLfWyzHW8, age = 1973, popularity = 3.600000, has abstract variables = FALSE , quotient = 197.300000.
+9: Object Oriented: name = RuZE02uUzT, age = 1983, popularity = 4.800000, has abstract variables = TRUE, legacy = INTERFACE. quotient = 198.300000.
+10: Object Oriented: name = 21bAtnCYBg, age = 1985, popularity = 22.800000, has abstract variables = TRUE, legacy = SINGLE. quotient = 198.500000.
+11: Object Oriented: name = S9ubW3E7CM, age = 1987, popularity = 36.000000, has abstract variables = TRUE, legacy = MULTIPLE. quotient = 198.700000.
+12: Object Oriented: name = SFfn7zfJGt, age = 1991, popularity = 40.800000, has abstract variables = FALSE, legacy = SINGLE. quotient = 199.100000.
+13: functional: name = AqBCNJ3SRq, age = 1992, popularity = 13.200000, lazy calculation = FALSE, type = DYNAMIC. quotient = 199.200000.
+14: Object Oriented: name = Z8Lx9P0Yyx, age = 2000, popularity = 10.800000, has abstract variables = FALSE, legacy = SINGLE. quotient = 200.000000.
+15: functional: name = KeO16FJGDb, age = 2004, popularity = 15.600000, lazy calculation = TRUE , type = STRICT. quotient = 200.400000.
+16: procedural: name = DCvwJjo0aQ, age = 2007, popularity = 42.000000, has abstract variables = FALSE , quotient = 200.700000.
+17: functional: name = w36TsVNKpl, age = 2010, popularity = 14.400000, lazy calculation = FALSE, type = DYNAMIC. quotient = 201.000000.
+18: functional: name = R8ABlxzlGr, age = 2012, popularity = 4.800000, lazy calculation = FALSE, type = STRICT. quotient = 201.200000.
+19: functional: name = nwZ3pNrs4I, age = 2019, popularity = 31.200000, lazy calculation = TRUE , type = DYNAMIC. quotient = 201.900000.
+20: functional: name = gv2RkAAv18, age = 2020, popularity = 34.800000, lazy calculation = FALSE, type = STRICT. quotient = 202.000000.

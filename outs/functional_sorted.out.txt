@@ -1,0 +1,7 @@
+Sorted container:
+Container contains 5 elements.
+0: functional: name = dfgfd, age = 754, popularity = 14.000000, lazy calculation = TRUE , type = DYNAMIC. quotient = 150.800000.
+1: functional: name = asytryd, age = 1234, popularity = 14.000000, lazy calculation = TRUE , type = DYNAMIC. quotient = 176.285714.
+2: functional: name = ds, age = 435, popularity = 14.000000, lazy calculation = FALSE, type = STRICT. quotient = 217.500000.
+3: functional: name = gjf, age = 754, popularity = 14.000000, lazy calculation = TRUE , type = DYNAMIC. quotient = 251.333333.
+4: functional: name = fd43gdf, age = 3452, popularity = 100.000000, lazy calculation = FALSE, type = STRICT. quotient = 493.142857.
